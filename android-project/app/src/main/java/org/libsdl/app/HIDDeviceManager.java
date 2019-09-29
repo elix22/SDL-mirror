@@ -105,6 +105,7 @@ public class HIDDeviceManager {
         mContext = context;
 
         // Make sure we have the HIDAPI library loaded with the native functions
+		/* elix22 - no needed
         try {
             SDL.loadLibrary("hidapi");
         } catch (Throwable e) {
@@ -133,6 +134,7 @@ public class HIDDeviceManager {
 
             return;
         }
+		*/
         
         HIDDeviceRegisterCallback();
 
